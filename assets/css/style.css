@@ -1,4 +1,10 @@
 @charset "utf-8";
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 /* ==========================================================================
    1. CSS Reset Code
    ========================================================================== */
@@ -8,13 +14,87 @@
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,10 +104,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section { display: block; }
 
 /* Force scrollbar */
 html { overflow-y: scroll; }
@@ -40,9 +127,7 @@ input[type='radio'] { vertical-align: text-bottom; }
 label,
 input[type='button'],
 input[type='submit'],
-button {
-  cursor: pointer;
-}
+button { cursor: pointer; }
 
 strong {
   font-weight: bold;
@@ -68,7 +153,6 @@ sup {
 
 sup { top: -.7em; }
 sub { bottom: -.25em; }
-
 /* 1.2. Clear Fix
    ========================== */
 
@@ -79,17 +163,19 @@ sub { bottom: -.25em; }
 }
 
 .cf:after { clear: both; }
+
 .cf { *zoom: 1; }
 
 /*for all*/
 body {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: sans-serif;
 }
 
-a { 
+a {
   display: inline-block;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 li {
@@ -100,42 +186,131 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 86%;
   margin: 0 auto;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /*=================================
   main styling starts here
 =================================*/
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://blog.dheerajverma.in/wp-content/uploads/2018/10/css-gradient-e1595456078187.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
 
+.heading {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+}
 
+.counetr-section {
+  padding: 60px 0;
+  background: #555e480a;
+}
 
+.counter-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
 
+.counter-item {
+  padding: 45px 3%;
+  margin: 15px 2%;
+  -webkit-box-flex: 0;
+  flex: 0 0 23%;
+  -ms-flex: 0 0 23%;
+  background: #2299dfcc;
+  -webkit-box-shadow: 1px 1px 3px #b9aaaa;
+  box-shadow: 1px 1px 3px #b9aaaa;
+  text-align: center;
+}
 
+.counter-heading,
+.counter-num {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+}
 
-
+.counter-num {
+  padding-bottom: 15px;
+  display: block;
+}
 /*=================================
   main styling ends here
 =================================*/
 
 /*=================================
   footer styling starts here
-=================================*/ 
+=================================*/
+footer {
+  padding: 10px 0;
+  background: #000;
+  color: #fff;
+  opacity: 0.7;
+}
 
+.copy {
+  font-size: 18px;
+  text-align: center;
+}
 
-
-
-
-
-
- /*=================================
+/*=================================
   footer styling ends here
-=================================*/ 
+=================================*/
 
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+  .counter-item {
+    -ms-flex-preferred-size: 28%;
+    flex-basis: 28%;
+  }
+}
 
+@media only screen and (max-width: 768px) {
+  .counter-item {
+    -ms-flex-preferred-size: 46%;
+    flex-basis: 46%;
+  }
+}
 
+@media only screen and (max-width: 480px) {
+  .heading { font-size: 35px; }
 
-}  
+  .counter-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .copy { font-size: 16px; }
+}
