@@ -282,6 +282,12 @@ footer {
   text-align: center;
 }
 
+.contact {
+  background: #3da2d3;
+  padding: 80px 0;
+  height: 100vh;
+}
+
 /*=================================
   footer styling ends here
 =================================*/
@@ -294,16 +300,18 @@ footer {
     flex-basis: 28%;
   }
 }
-
+/*media query for 995px end here*/
+/*media query for 768px starts here*/
 @media only screen and (max-width: 768px) {
   .counter-item {
     -ms-flex-preferred-size: 46%;
     flex-basis: 46%;
   }
 }
-
+/*media query for 768px end here*/
+/*media query for 480px starts here*/
 @media only screen and (max-width: 480px) {
-  .heading { font-size: 35px; }
+  .heading { font-size: 27px; }
 
   .counter-list {
     -webkit-box-orient: vertical;
@@ -314,3 +322,4 @@ footer {
 
   .copy { font-size: 16px; }
 }
+/*media query for 480px end here*/
