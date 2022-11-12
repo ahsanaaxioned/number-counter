@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -10,10 +10,10 @@
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="favicon.ico" />
   <!--font-awesome link for icons-->
-  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
+  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
 </head>
 
 <body>
@@ -21,34 +21,36 @@
   <div class="container">
     <!--main section start-->
     <main>
-      <section class="hero">
-        <div class="wrapper">
+      <section class="hero flex">
+        <div class="wrapper flex">
           <h1 class="heading">Number Counter</h1>
         </div>
       </section>
       <section class="counetr-section">
-        <ul class="counter-list">
-          <li class="counter-item">
-            <h2 class="counter-heading">Project Completed</h2>
-            <span class="counter-num" data-target="2000">0</span>
-          </li>
-          <li class="counter-item">
-            <h2 class="counter-heading">Happy Clients</h2>
-            <span class="counter-num" data-target="5000">0</span>
-          </li>
-          <li class="counter-item">
-            <h2 class="counter-heading">Clients</h2>
-            <span class="counter-num" data-target="6000">0</span>
-          </li>
-          <li class="counter-item">
-            <h2 class="counter-heading">Live Project</h2>
-            <span class="counter-num" data-target="3000">0</span>
-          </li>
-          <li class="counter-item">
-            <h2 class="counter-heading">Internal Project</h2>
-            <span class="counter-num" data-target="4000">0</span>
-          </li>
-        </ul>
+        <div class="wrapper">
+          <ul class="counter-list">
+            <li class="counter-item">
+              <span class="counter-num" data-target="2000">0</span>
+              <h2 class="counter-heading">Project Completed</h2>
+            </li>
+            <li class="counter-item">
+              <span class="counter-num" data-target="5000">0</span>
+              <h2 class="counter-heading">Happy Clients</h2>
+            </li>
+            <li class="counter-item">
+              <span class="counter-num" data-target="6000">0</span>
+              <h2 class="counter-heading">Clients</h2>
+            </li>
+            <li class="counter-item">
+              <span class="counter-num" data-target="3000">0</span>
+              <h2 class="counter-heading">Live Project</h2>
+            </li>
+            <li class="counter-item">
+              <span class="counter-num" data-target="4000">0</span>
+              <h2 class="counter-heading">Internal Project</h2>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!--main section end-->
@@ -63,4 +65,5 @@
   <!--container end-->
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>
